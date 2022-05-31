@@ -39,4 +39,4 @@ services:
     networks:
       - ingaroca
 networks:
-  - ingaroca:
+  ingaroca:
