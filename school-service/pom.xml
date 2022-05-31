@@ -36,6 +36,8 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
+			<version>1.18.24</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -73,7 +75,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<repository>developer.okta.com/microservice-docker-${project.artifactId}</repository>
+					<repository>microservice-docker-${project.artifactId}</repository>
 					<tag>${project.version}</tag>
 					<buildArgs>
 						<JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
